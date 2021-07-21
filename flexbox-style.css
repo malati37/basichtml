@@ -1,0 +1,54 @@
+body {
+  background-color: wheat;
+  font-size: 30px;
+  box-sizing: border-box;
+}
+.wrapper {
+  font-size: 30px;
+  background: turquoise;
+  width: 80%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  /* flex-direction: column-reverse; */
+}
+.container > div {
+  width: 80px;
+  height: 80px;
+  background: white;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  /* align-items: center; */
+  align-content: center;
+}
+.container > div:nth-child(odd) {
+  height: 80px;
+}
+div.item-1 {
+  background: red;
+  flex-grow: 2;
+  /* align-self: flex-end; */
+}
+div.item-5 {
+  background: red;
+  flex-grow: 2;
+  /* order: -1; */
+  /* to make some element come in fronf */
+}
+div.item-9 {
+  background: red;
+  flex-grow: 2;
+}
